@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------
+.swiper-slide/*--------------------------------------------------------------
 # Font & Color Variables
 --------------------------------------------------------------*/
 /* Fonts */
@@ -238,7 +238,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: white;
     padding: 20px 15px;
     margin-left: 2px;
     font-size: 16px;
@@ -894,7 +894,7 @@ section,
   width: 100%; 
   height: 100%;
   object-fit: cover;
-  z-index: 1; */
+  z-index: 1; 
 }
 
 .hero-info{
@@ -968,97 +968,74 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
+section, .section {
+  color: #fff;
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 100px;
+  overflow: clip;
+  font-size: larger;
+}
+
+.about-img {
+  width: 600px; 
+  margin-left: 200px; 
+  margin-top: 50px;
+}
+
 .about{
-  background-image: url('assets/img/about-bg.jpg');
- background-color: #cccccc;
- max-width: ;width: 100% ;
- color: white;
- margin-top: -5px;
- padding-bottom: 100px;
+  width: 100%;
+  height: 100%;
 }
-
+@media (max-width: 1112px) {
+  /* For mobile phones: */
+  .about-img{
+margin: 0%;  }
+  .about{
+    width: 100%;
+    height: 100%;
+  }
+}
 .about .content h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
+  margin-top: 70px;
 }
 
-.about .content {
-  width: 100% ;
-
+.about .content .fst-italic {
+  color: white;
 }
-
-/* .first{
-  max-width: 50%;
-} */
-.second{
-  position: relative;
-  left: 50%;
-  max-width: 100%;
-  margin-right: 500px ;
+.about .container .p {
+color: white;
+font-size: larger;
 }
-@media (max-width: 480px) {
-  .second{
-  margin-right: 0%;
-    position: relative;
-     left: 0%;
-}
-}
-@media (max-width: 800px) {
-  .second{
-  margin-right: 0%;
-    position: relative;
-     left: 0%;
-}
-}
-
 .about .content ul {
   list-style: none;
   padding: 0;
 }
 
 .about .content ul li {
-  padding-bottom: 10px;
+  padding: 10px 0 0 0;
+  display: flex;
 }
 
 .about .content ul i {
-  font-size: 1.25rem;
-  margin-right: 4px;
   color: var(--accent-color);
+  margin-right: 0.5rem;
+  line-height: 1.2;
+  font-size: 1.25rem;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+  font-size: larger;
 }
 
-.about .content .read-more {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  padding: 12px 30px;
-  transition: 0.3s;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.hero-logo {
+  max-width: 70%;
 }
 
-.about .content .read-more i {
-  font-size: 18px;
-  margin-left: 5px;
-  line-height: 0;
-  transition: 0.3s;
-}
-
-.about .content .read-more:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-  padding-right: 25px;
-}
-
-.about .content .read-more:hover i {
-  margin-left: 10px;
-}
 
 /*--------------------------------------------------------------
 # Cards Section
@@ -1129,6 +1106,10 @@ section,
   height: 100%;
 }
 
+.srv-title{
+  color: #191919;
+}
+
 .services .service-item .icon {
   margin: 0 auto;
   width: 64px;
@@ -1166,12 +1147,14 @@ section,
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
+  color: #191919;
 }
 
 .services .service-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: #191919;
 }
 
 .services .service-item:hover {
@@ -1180,7 +1163,7 @@ section,
 }
 
 .services .service-item:hover .icon {
-  background: var(--surface-color);
+  background: #191919;
 }
 
 .services .service-item:hover .icon i {
@@ -1700,6 +1683,7 @@ section,
 --------------------------------------------------------------*/
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  max-height: 650px;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -1757,9 +1741,3 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
