@@ -527,7 +527,6 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding-bottom: 50px;
   position: relative;
 }
 
@@ -972,7 +971,7 @@ section,
 section, .section {
   color: #fff;
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 60px 0px;
   scroll-margin-top: 100px;
   overflow: clip;
   font-size: larger;
@@ -980,12 +979,12 @@ section, .section {
 
 .about-img {
   width: 600px; 
-  margin-left: 200px; 
+  margin-left: 50px; 
   margin-top: 50px;
 }
 
 .about{
-  width: 100%;
+  max-width: 100% !important;
   height: 100%;
 }
 @media (max-width: 1112px) {
@@ -1034,6 +1033,125 @@ font-size: larger;
 
 .hero-logo {
   max-width: 70%;
+}
+
+.appartment .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.appartment .content ul {
+  list-style: none;
+  padding: 0;
+  color: #191919;
+}
+
+.appartment .content ul li {
+  padding-bottom: 10px;
+  color: #191919;
+}
+
+.appartment .content ul i {
+  font-size: 1.25rem;
+  margin-right: 4px;
+  color: var(--accent-color);
+}
+
+.appartment .content p:last-child {
+  margin-bottom: 0;
+  color: #191919;
+}
+
+.appartment .content .read-more {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appartment .content .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.appartment .content .read-more:hover {
+  background: color-mix(in srgb, var(--accent-color), black 20%);
+  padding-right: 19px;
+}
+
+.appartment .content .read-more:hover i {
+  margin-left: 10px;
+}
+
+
+/* ......................................... */
+
+
+
+.penthouse .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.penthouse .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.penthouse .content ul li {
+  padding-bottom: 10px;
+}
+
+.penthouse .content ul i {
+  font-size: 1.25rem;
+  margin-right: 4px;
+  color: var(--accent-color);
+}
+
+.penthouse .content p:last-child {
+  margin-bottom: 0;
+}
+
+.penthouse .content .read-more {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.penthouse .content .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.penthouse .content .read-more:hover {
+  background: color-mix(in srgb, var(--accent-color), black 20%);
+  padding-right: 19px;
+}
+
+.penthouse .content .read-more:hover i {
+  margin-left: 10px;
 }
 
 
@@ -1526,6 +1644,7 @@ font-size: larger;
   background-color: var(--surface-color);
   padding: 20px 0 30px 0;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  color: #191919;
 }
 
 .contact .info-item i {
@@ -1548,12 +1667,14 @@ font-size: larger;
   font-size: 18px;
   font-weight: 700;
   margin: 10px 0;
+  color: #191919;
 }
 
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
+  color: #191919;
 }
 
 .contact .php-email-form {
@@ -1561,6 +1682,7 @@ font-size: larger;
   height: 100%;
   padding: 30px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  color: #191919;
 }
 
 @media (max-width: 575px) {
