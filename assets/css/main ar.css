@@ -1,7 +1,7 @@
-/*--------------------------------------------------------------
-# Font & Color Variables
+ /* Font & Color Variables
 --------------------------------------------------------------*/
 /* Fonts */
+
 @font-face {
   font-family: kufam;
   src: url(assets/fonts/Kufam-VariableFont_wght.ttf);
@@ -125,7 +125,6 @@ div {
 }
 
 
-
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
@@ -173,6 +172,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  direction: rtl;
 }
 
 a {
